@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class Bank {
-    private List<Account> accounts = new ArrayList<>();
     private String name;
-    private final String id;
+    private  String id;
+    private List<Account> accounts = new ArrayList<>();
 }
