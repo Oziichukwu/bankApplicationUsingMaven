@@ -12,7 +12,7 @@ class CustomerReposotoryImplTest {
     private CustomerRepository customerRepository;
     @BeforeEach
     void setUp() {
-        customerRepository = new CustomerReposotoryImpl();
+        customerRepository = new CustomerRepositoryImpl();
     }
 
     @AfterEach
