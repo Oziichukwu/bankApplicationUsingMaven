@@ -5,7 +5,7 @@ import africa.semicolon.bankingApplication.data.models.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerReposotoryImpl implements CustomerRepository {
+public class CustomerRepositoryImpl implements CustomerRepository {
 
     List<Customer> customers = new ArrayList<>();
 
