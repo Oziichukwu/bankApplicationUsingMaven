@@ -9,6 +9,10 @@ public class BankRepositoryImpl implements BankRepository{
     private List<Bank> banks = new ArrayList<>();
     @Override
     public Bank save(Bank bank) {
+        Bank foundBank = findByBankId(bank.getId());
+        if (foundBank != null){
+            delete(foundBank);
+        }
         banks.add(bank);
         return findByBankId(bank.getId());
     }
