@@ -1,6 +1,5 @@
 package africa.semicolon.bankingApplication.data.repositories;
 
-import africa.semicolon.bankingApplication.data.models.Bvn;
 import africa.semicolon.bankingApplication.data.models.Customer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,8 +21,7 @@ class CustomerReposotoryImplTest {
     @Test
     void save() {
         Customer customer = new Customer();
-        Bvn bvn = new Bvn("388403245",customer);
-        customer.setBvn(bvn.getId());
+        customer.setBvn("388403245");
         customer.setFirstName("paul");
         customer.setLastName("phliip");
         Customer savedCustomer = customerRepository.save(customer);
@@ -33,8 +31,7 @@ class CustomerReposotoryImplTest {
     @Test
     void findByCustomerId() {
         Customer customer = new Customer();
-        Bvn bvn = new Bvn("388403245",customer);
-        customer.setBvn(bvn.getId());
+        customer.setBvn("388403245");
         customer.setFirstName("paul");
         customer.setLastName("phliip");
         Customer savedCustomer = customerRepository.save(customer);
@@ -46,8 +43,7 @@ class CustomerReposotoryImplTest {
     @Test
     void delete() {
         Customer customer = new Customer();
-        Bvn bvn = new Bvn("388403245",customer);
-        customer.setBvn(bvn.getId());
+        customer.setBvn("388403245");
         customer.setFirstName("paul");
         customer.setLastName("phliip");
         customerRepository.save(customer);
@@ -59,8 +55,7 @@ class CustomerReposotoryImplTest {
     @Test
     void testDelete() {
         Customer customer = new Customer();
-        Bvn bvn = new Bvn("388403245",customer);
-        customer.setBvn(bvn.getId());
+        customer.setBvn("388403245");
         customer.setFirstName("paul");
         customer.setLastName("phliip");
         customerRepository.save(customer);
@@ -73,8 +68,7 @@ class CustomerReposotoryImplTest {
     @Test
     void findAll() {
         Customer customer = new Customer();
-        Bvn bvn = new Bvn("388403245",customer);
-        customer.setBvn(bvn.getId());
+        customer.setBvn("388403245");
         customer.setFirstName("paul");
         customer.setLastName("phliip");
         customerRepository.save(customer);
