@@ -17,8 +17,6 @@ public class CustomerResponse {
         lastName = customer.getLastName();
         bvn = customer.getBvn();
         numberOfAccounts = customer.getAccounts().size();
-
-
     }
 
 }
